@@ -1,37 +1,50 @@
 <?php
-$name ="Tim";
+  $name ="Tim";
   $profession="Designer";
   $city="Miass";
   $email="Tim@gmail.com";
-  $phone ="+89630895643";
+  $phone ="+79630895643";
 
-$skills = [
-[
-'name' => 'Фотошоп', 'percent' => 60,
-],
-[
-'name' => 'Иллюстратор', 'percent' => 70,
-],
-[
-'name' => 'Медиа', 'percent' => 40,
-],
-[
-'name' => 'PHP', 'percent' => 1,
-]
-];
+  $skills = [
+    [
+      'name' => 'Фотошоп',
+      'percent' => 60
+    ],
+    [
+      'name' => 'Иллюстратор',
+      'percent' => 70
+    ],
+    [
+      'name' => 'Медиа',
+      'percent' => 40
+    ],
+    [
+      'name' => 'PHP',
+      'percent' => 1
+    ]
+  ];
 
 $works =[
-[
-"name" => "Графический дизайнер", "dataStart" => "Deсember 2019", "dataEnd" => "carrent", "description" => "Разработка проектов художественного оформления, создание эскизов и визуализация концепции дизайна, осуществление вёрстки макетов полиграфической и сувенирной продукции с шрифтовыми и не шрифтовыми элементами, рекламных и презентационных материалов, разработка творческих концепций и идей, отражающих маркетинговые задачи рекламных кампаний.",
-],
-[
-"name" => "Дизайнер", "dataStart" => "May 2017", "dataEnd" => "Mart 2019", "description" => "Разработка проектов художественного оформления, создание эскизов и визуализация концепции дизайна, разработка шрифтов, 
-дизайн упаковок.",
-],
-[
-"name" => "Дизайнер", "dataStart" => "January 2013", "dataEnd" => "April 2017", "description" => "Разработка проектов художественного оформления, создание эскизов и визуализация концепции дизайна, осуществление вёрстки макетов полиграфической и сувенирной продукции с шрифтовыми и не шрифтовыми элементами, рекламных и презентационных материалов.",
-],
-];
+    [
+    "name" => "Графический дизайнер",
+    "dataStart" => "Deсember 2019", 
+    "dataEnd" => "carrent", 
+    "description" => "Разработка проектов художественного оформления, создание эскизов и визуализация концепции дизайна, осуществление вёрстки макетов полиграфической и сувенирной продукции с шрифтовыми и не шрифтовыми элементами, рекламных и презентационных материалов, разработка творческих концепций и идей, отражающих маркетинговые задачи рекламных кампаний."
+    ],
+    [
+    "name" => "Дизайнер",
+    "dataStart" => "May 2017",
+    "dataEnd" => "Mart 2019",
+    "description" => "Разработка проектов художественного оформления, создание эскизов и визуализация концепции дизайна, разработка шрифтов, 
+    дизайн упаковок."
+    ],
+    [
+    "name" => "Дизайнер",
+    "dataStart" => "January 2013",
+    "dataEnd" => "April 2017",
+    "description" => "Разработка проектов художественного оформления, создание эскизов и визуализация концепции дизайна, осуществление вёрстки макетов полиграфической и сувенирной продукции с шрифтовыми и не шрифтовыми элементами, рекламных и презентационных материалов."
+    ]
+ ];
 
 ?>
 
@@ -43,11 +56,11 @@ $works =[
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-    html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Jost', sans-serif;}
+      html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Jost', sans-serif;}
     </style>
   </head>
 <body class="w3-light-grey">
@@ -69,20 +82,21 @@ $works =[
           </div>
         </div>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i> <?php echo $profession; ?></p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $profession; ?></p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $city; ?></p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $email; ?></p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $phone; ?></p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $phone; ?></p>          
           <hr>
 
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Навыки</b></p>
           <?php for($i = 0; $i < count($skills); $i++): ?>
-          <p><?php echo $skills [$i]["name"]?></p>
+          <p><?php echo $skills[$i]["name"]?></p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<?php echo $skills [$i]["percent"];?>%"><?php echo $skills [$i]["percent"]; ?>%
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<?php echo $skills[$i]["percent"];?>%">
+              <?php echo $skills[$i]["percent"]; ?>%
             </div>
           </div>
-           <?php endfor; ?>
+          <?php endfor; ?>
           <br>
 
           <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Языки</b></p>
@@ -112,19 +126,19 @@ $works =[
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2>
         <?php for($i = 0; $i < count($works); $i++) :?>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b><?php echo $works [$i]['name']; ?> </b></h5>
+          <h5 class="w3-opacity"><b><?php echo $works[$i]['name']; ?></b></h5>
           <h6 class="w3-text-teal">
-          <i class="fa fa-calendar fa-fw w3-margin-right"></i>
-          <?= $works [$i]['dataStart']; ?> - 
-          <?php if($i == 0): ?>
-          <span class="w3-tag w3-teal w3-round">
-          <?=$works [$i]['dataEnd']; ?>
-          </span>
-          <?php else: ?>
-          <?=$works [$i]['dataEnd']; ?>
-          <?php endif; ?>
+            <i class="fa fa-calendar fa-fw w3-margin-right"></i>
+            <?php echo $works[$i]['dataStart']; ?> - 
+            <?php if ($i == 0): ?>
+              <span class="w3-tag w3-teal w3-round">
+                <?php echo $works[$i]['dataEnd']; ?>
+              </span>
+            <?php else: ?>
+              <?php echo $works[$i]['dataEnd']; ?>
+            <?php endif; ?>
           </h6>
-          <p><?php echo $works [$i]['description']; ?></p>
+          <p><?php echo $works[$i]['description']; ?></p>
           <hr>
         </div>
         <?php endfor; ?>
@@ -171,3 +185,4 @@ $works =[
 
 </body>
 </html>
+
